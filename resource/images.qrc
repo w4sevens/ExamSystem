@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="login">
+    <file>images/超级管理员.png</file>
+    <file>images/管理员.png</file>
+    <file>images/一般用户.png</file>
+    <file>images/login3.png</file>
+    <file>images/login_background1.gif</file>
+    <file>images/arrow_down.png</file>
+    <file>images/safe.png</file>
+    <file>images/wechat.jpg</file>
+  </qresource>
+</RCC>

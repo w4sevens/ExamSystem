@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>考试系统</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>13</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>当前登录用户：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>33</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>姓　　　　名：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>53</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>一 级  单 位：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>73</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>二 级  单 位：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>93</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>三 级  单 位：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_units2">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>73</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_currentUser">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>13</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_units3">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>93</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_username">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>33</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_units1">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>53</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>78</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>总　　分：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>18</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>当前试卷：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>38</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>考试时长：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>98</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>得　　分：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>58</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>题目数量：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_scores">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>78</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_default">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>18</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_nums">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>58</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_score">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>98</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_testtime">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>38</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>114</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>当 前  时 间：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_currenttime">
+         <property name="geometry">
+          <rect>
+           <x>106</x>
+           <y>114</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>120</y>
+           <width>62</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>考试时间：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_scoretime">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>120</y>
+           <width>256</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_picture">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>10</y>
+           <width>100</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <widget class="QPushButton" name="pushButton">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>添加</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>删除</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>模拟练习</string>
+           </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>481</width>
+             <height>394</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QListView" name="listView"/>
+              </item>
+              <item>
+               <widget class="QListView" name="listView_2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListView" name="listView_3"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>我的错题</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>生成试卷</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <widget class="QTableView" name="tableView">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>481</width>
+             <height>391</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>410</y>
+             <width>62</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>当前试卷：</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>410</y>
+             <width>391</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>开始考试</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>440</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>随机考试</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_importdata"/>
+    <addaction name="action_outputdata"/>
+    <addaction name="action_close"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>试卷</string>
+    </property>
+    <addaction name="action_tianjiashijuan"/>
+    <addaction name="action_shijuanguanli"/>
+    <addaction name="action_daorushijuan"/>
+    <addaction name="actiond_daochushijuan"/>
+    <addaction name="actiond_qingkongshijuan"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>题库</string>
+    </property>
+    <addaction name="action_daorutiku"/>
+    <addaction name="action_daochutiku"/>
+    <addaction name="action_qingkongtiku"/>
+    <addaction name="action_tikuguanli"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>用户</string>
+    </property>
+    <addaction name="actionuser_guanli"/>
+    <addaction name="actionuser_daoru"/>
+    <addaction name="actionuser_daochu"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionban"/>
+    <addaction name="action_tiku_moban"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>考试</string>
+    </property>
+    <addaction name="action_kaishikaoshi"/>
+    <addaction name="action_suiji_test"/>
+    <addaction name="action_suiji_set"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>统计</string>
+    </property>
+    <addaction name="action_chengjitongji"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="action_daorutiku">
+   <property name="text">
+    <string>导入题库</string>
+   </property>
+  </action>
+  <action name="action_daochutiku">
+   <property name="text">
+    <string>导出题库</string>
+   </property>
+  </action>
+  <action name="action_qingkongtiku">
+   <property name="text">
+    <string>清空题库</string>
+   </property>
+  </action>
+  <action name="action_hebingtiku">
+   <property name="text">
+    <string>合并题库</string>
+   </property>
+  </action>
+  <action name="actiond_4">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actiond_5">
+   <property name="text">
+    <string>d</string>
+   </property>
+  </action>
+  <action name="action_tianjiashijuan">
+   <property name="text">
+    <string>添加试卷</string>
+   </property>
+  </action>
+  <action name="action_ksks">
+   <property name="text">
+    <string>开始考试</string>
+   </property>
+  </action>
+  <action name="action_shijuanguanli">
+   <property name="text">
+    <string>试卷管理</string>
+   </property>
+  </action>
+  <action name="actiondk_3">
+   <property name="text">
+    <string>dk</string>
+   </property>
+  </action>
+  <action name="actiondk_4">
+   <property name="text">
+    <string>dk</string>
+   </property>
+  </action>
+  <action name="actiondk_5">
+   <property name="text">
+    <string>dk</string>
+   </property>
+  </action>
+  <action name="actiondk_6">
+   <property name="text">
+    <string>dk</string>
+   </property>
+  </action>
+  <action name="actiondk_7">
+   <property name="text">
+    <string>dk</string>
+   </property>
+  </action>
+  <action name="actionuser_guanli">
+   <property name="text">
+    <string>用户管理</string>
+   </property>
+  </action>
+  <action name="actionjianshao">
+   <property name="text">
+    <string>删除用户</string>
+   </property>
+  </action>
+  <action name="actionuser_daoru">
+   <property name="text">
+    <string>导入用户</string>
+   </property>
+  </action>
+  <action name="actionuser_daochu">
+   <property name="text">
+    <string>导出用户</string>
+   </property>
+  </action>
+  <action name="action_tikuguanli">
+   <property name="text">
+    <string>题库管理</string>
+   </property>
+  </action>
+  <action name="action_importdata">
+   <property name="text">
+    <string>导入考试数据</string>
+   </property>
+  </action>
+  <action name="action_outputdata">
+   <property name="text">
+    <string>导出考试数据</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionban">
+   <property name="text">
+    <string>帮助文档</string>
+   </property>
+  </action>
+  <action name="action_kaishikaoshi">
+   <property name="text">
+    <string>开始考试</string>
+   </property>
+  </action>
+  <action name="actionshangyicikaoshi">
+   <property name="text">
+    <string>结束考试</string>
+   </property>
+  </action>
+  <action name="actionjieshukaoshi">
+   <property name="text">
+    <string>继续考试</string>
+   </property>
+  </action>
+  <action name="action_daorushijuan">
+   <property name="text">
+    <string>导入试卷</string>
+   </property>
+  </action>
+  <action name="actiond_daochushijuan">
+   <property name="text">
+    <string>导出试卷</string>
+   </property>
+  </action>
+  <action name="actiond_qingkongshijuan">
+   <property name="text">
+    <string>清空试卷</string>
+   </property>
+  </action>
+  <action name="actiond_6">
+   <property name="text">
+    <string>d</string>
+   </property>
+  </action>
+  <action name="actiond_7">
+   <property name="text">
+    <string>d</string>
+   </property>
+  </action>
+  <action name="action_chengjitongji">
+   <property name="text">
+    <string>成绩统计</string>
+   </property>
+  </action>
+  <action name="action_suiji_test">
+   <property name="text">
+    <string>随机考试</string>
+   </property>
+  </action>
+  <action name="action_suiji_set">
+   <property name="text">
+    <string>随机设置</string>
+   </property>
+  </action>
+  <action name="action_tiku_moban">
+   <property name="text">
+    <string>题库模板</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>listView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>row_select()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listView_2</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>row_select1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>367</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_tiku()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listView_3</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>row_select2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>459</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>row_select4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>273</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>delete_tiku()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>wrong_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>455</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>800</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_test4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>607</x>
+     <y>648</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1065</x>
+     <y>665</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>get_testpaper()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>638</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>856</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>suiji_test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>668</x>
+     <y>637</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>851</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>row_select()</slot>
+  <slot>row_select1()</slot>
+  <slot>row_select2()</slot>
+  <slot>add_tiku()</slot>
+  <slot>delete_tiku()</slot>
+  <slot>start_test()</slot>
+  <slot>chk_random()</slot>
+  <slot>chk_seq()</slot>
+  <slot>chk_myfalse()</slot>
+  <slot>chk_myfavor()</slot>
+  <slot>wrong_test()</slot>
+  <slot>row_select4()</slot>
+  <slot>start_test4()</slot>
+  <slot>get_testpaper()</slot>
+  <slot>suiji_test()</slot>
+ </slots>
+</ui>
